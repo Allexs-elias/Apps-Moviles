@@ -9,7 +9,7 @@
     <ion-label position="stacked">Nueva Tarea</ion-label>
     <ion-input [(ngModel)]="newTaskStr" placeholder="Ejem: Estudiar typescript"></ion-input>
   </ion-item>
-  <ion-button expand="block" color="success" (click)="addTask()">Agregar Tarea</ion-button>
+  <ion-button expand="block" color="primary" (click)="addTask()">Agregar Tarea</ion-button>
   <ion-list>
     @for(tarea of tasks; track tarea.title) {
       <ion-item>
